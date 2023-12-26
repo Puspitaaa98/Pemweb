@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganti Foto</title>
+</head>
+<body>
+    <h2>Ganti Foto</h2>
+
+    <label for="pilihgambar">Pilih Gambar</label>
+    <select id="pilihgambar" onchange="tampilgambar()">
+        <option value="panda">Panda</option>
+        <option value="burung">Burung</option>
+        <option value="lumba2">Lumba - lumba</option>
+        <option value="kucing">Kucing</option>
+        <option value="kuda">Kuda</option>
+        <option value="kelinci">Kelinci</option>
+    </select>
+    <br> <br>
+    <img src="https://media.istockphoto.com/id/523761634/id/foto/lucu-beruang-panda-memanjat-di-pohon.jpg?s=612x612&w=0&k=20&c=tg0izGKZALoV4Cfv47N2-rqCzVQCEL0hk5_3C3JNtgA=" id="gambarpilih" alt="kosong" width="300">
+
+    <script>
+        function tampilgambar() {
+            let nilaiterpilih = document.getElementById("pilihgambar").value;
+            let gambarterpilih = document.getElementById("gambarpilih").value;
+
+            switch (nilaiterpilih){
+                case "panda":
+                    gambarpilih.src ="https://media.istockphoto.com/id/523761634/id/foto/lucu-beruang-panda-memanjat-di-pohon.jpg?s=612x612&w=0&k=20&c=tg0izGKZALoV4Cfv47N2-rqCzVQCEL0hk5_3C3JNtgA=";
+                    break;
+                case "burung":
+                    gambarpilih.src ="https://www.blibli.com/friends-backend/wp-content/uploads/2023/03/B300234-Cover-Fakta-Burung-Beo.jpg";
+                    break;
+                case "lumba2":
+                    gambarpilih.src ="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/indizone/2021/09/26/75sEoZZ/bukan-cuma-pintar-ikan-lumba-lumba-juga-sangat-hebat-dalam-merawat-dan-melindungi-diri21.jpg";
+                    break;
+                case "kucing":
+                    gambarpilih.src ="https://o-cdn-cas.sirclocdn.com/parenting/images/kenapa_kucing_takut_air.width-800.format-webp.webp";
+                    break;
+                case "kuda":
+                    gambarpilih.src ="https://cdn0-production-images-kly.akamaized.net/ln13LBi6KhgsEOhC_wnRwaEbQog=/1200x1200/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3153869/original/063163600_1592288896-pexels-photo-1996330.jpeg";
+                    break;
+                case "kelinci":
+                    gambarpilih.src ="https://cdn1-production-images-kly.akamaized.net/0oauzqZdRi0ODqrgChQx13PZxyE=/1200x1200/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3233586/original/068197700_1599696585-photo-1518796745738-41048802f99a.jpg";
+                    break;
+            }
+        }
+    </script>
+    
+</body>
+</html>
